@@ -1,0 +1,122 @@
+/* General styles */
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #505bf3;
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+}
+
+/* Left side styles */
+.header-left {
+  max-width: 50%;
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e4e4e4;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-group-profiles {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+
+}
+
+.header-description {
+  font-size: 1rem;
+  color: #f3eaea;
+  line-height: 1.5;
+}
+
+.header-button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: #0056b3;
+}
+
+.header-arrow-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+/* Right side styles */
+.header-right {
+  max-width: 45%;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: -22px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-left, .header-right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .header-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-group-profiles {
+    margin-bottom: 10px;
+  }
+
+  .header-button {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.2rem;
+  }
+
+  .header-description {
+    font-size: 0.9rem;
+  }
+
+  .header-button {
+    padding: 8px 16px;
+  }
+}

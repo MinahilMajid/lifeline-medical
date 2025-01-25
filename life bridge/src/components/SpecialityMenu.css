@@ -1,0 +1,48 @@
+#speciality {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the contents horizontally */
+  text-align: center;  /* Centers the text */
+  margin: 0 auto;     /* Automatically sets margins for centering on the page */
+}
+
+#speciality h1 {
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+#speciality p {
+  margin-bottom: 30px;
+
+    border: none; /* If a border is set */
+    text-decoration: none; /* If text decoration is the cause */
+}
+  
+  /* Space below the paragraph */
+
+#speciality div {
+  display: flex;
+  flex-wrap: wrap;   /* Allows items to wrap on smaller screens */
+  justify-content: center; /* Centers the images horizontally */
+}
+
+#speciality img {
+  max-width: 100px; /* Set the maximum width for the images */
+  margin: 10px;     /* Space around the images */
+  height: auto;     /* Maintain aspect ratio */
+}
+.doctorsname{
+  border: none; /* If a border is set */
+  text-decoration: none; /* If text decoration is the cause */
+  color: #333131;
+}
+.link{
+  border: none; /* If a border is set */
+  text-decoration: none; /* If text decoration is the cause */
+ 
+
+  cursor: pointer;      /* Changes cursor to pointer on hover */
+  transition: transform 0.4s; /* Smooth transition for the movement */
+}
+.link:hover{
+  transform: translateY(-15px); /* Moves the item up by 5 pixels on hover */
+}

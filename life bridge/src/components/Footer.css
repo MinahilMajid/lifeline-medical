@@ -1,0 +1,138 @@
+/* General footer container */
+footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between; /* Space between columns */
+  align-items: flex-start; /* Align items at the top */
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0 auto;
+  max-width: 1200px; /* Limit the width for larger screens */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 20px; /* Add space between sections on wrap */
+}
+
+/* Left section */
+footer .left-section {
+  flex: 1; /* Take up equal space */
+  min-width: 280px; /* Prevents collapsing on small screens */
+}
+
+footer .left-section img {
+  width: 50px; /* Adjust logo size */
+  margin-bottom: 15px;
+}
+
+footer .left-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: gray;
+}
+
+/* Center section */
+footer .center-section {
+  flex: 1; /* Take up equal space */
+  min-width: 200px; /* Prevents collapsing on small screens */
+}
+
+footer .center-section p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+footer .center-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  gap: 8px;
+}
+
+footer .center-section ul li {
+  font-size: 12px;
+  cursor: pointer;
+  color: grey;
+  font-weight: bold;
+}
+
+/* Right section */
+footer .right-section {
+  flex: 1; /* Take up equal space */
+  min-width: 200px; /* Prevents collapsing on small screens */
+}
+
+footer .right-section p {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+footer .right-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  gap: 8px;
+}
+
+footer .right-section ul li {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Copyright section */
+.copyright {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid grey;
+  padding-top: 10px;
+  color: black;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column; /* Stack sections vertically */
+    text-align: center;
+    gap: 30px;
+  }
+
+  footer .left-section,
+  footer .center-section,
+  footer .right-section {
+    margin: 0 auto;
+  }
+
+  footer .center-section ul li,
+  footer .right-section ul li {
+    font-size: 14px;
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  footer {
+    padding: 20px;
+  }
+
+  footer .left-section p,
+  footer .center-section ul li,
+  footer .right-section ul li {
+    font-size: 12px; /* Smaller text for mobile */
+  }
+
+  footer .left-section img {
+    width: 40px; /* Smaller logo size */
+  }
+
+  .copyright {
+    font-size: 12px; /* Smaller copyright text */
+  }
+}

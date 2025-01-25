@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Main Container */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Section */
+.about-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-header p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+.about-header span {
+  color: #007BFF;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.about-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.about-section .about-text {
+  flex: 1;
+}
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.about-section b {
+  font-size: 1.3rem;
+  color: #444;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Why Choose Us Section */
+.choose-us-header {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+.choose-us-header p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+.choose-us-header span {
+  color: #007BFF;
+}
+
+.choose-us-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.choose-us-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.choose-us-card b {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 10px;
+  display: block;
+}
+.choose-us-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .choose-us-section {
+    grid-template-columns: 1fr;
+  }
+}

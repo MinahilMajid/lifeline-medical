@@ -1,0 +1,160 @@
+.appointments-containerrr {
+  padding: 20px;
+  background-color: white; /* Light beige background */
+  border-radius: 15px;
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+  max-width: 1200px; /* Limit width for larger screens */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.appointments-titleee {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #2c3e50; /* Dark gray */
+  margin-bottom: 20px;
+}
+
+.appointments-listt {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 25px;
+}
+
+.appointment-carddd {
+  display: flex;
+  flex-direction: column; /* Stack content for mobile by default */
+  gap: 20px;
+  background-color: #ffffff;
+  border: 2px solid #6c63ff; /* Purple border */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-image-containerr {
+  text-align: center; /* Center image for smaller screens */
+}
+
+.doctor-imageee {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #27ae60; /* Green border */
+}
+
+.doctor-detailsss {
+  text-align: center; /* Center-align text on smaller screens */
+}
+
+.doctor-nameeee {
+  font-size: 22px;
+  font-weight: bold;
+  color: #34495e; /* Dark slate gray */
+}
+
+.doctor-specialityyy {
+  font-size: 18px;
+  color: #8e44ad; /* Purple */
+  margin-bottom: 10px;
+}
+
+.appointment-datetimee {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #2d3436; /* Dark gray */
+}
+
+.datetime-labelll {
+  font-weight: bold;
+  color: #e67e22; /* Orange */
+}
+
+.appointment-actionss {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.pay-button {
+  padding: 12px 20px;
+  background-color: #3498db; /* Blue background */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.pay-button:hover {
+  background-color: #2980b9; /* Darker blue */
+}
+
+.cancel-button {
+  padding: 12px 20px;
+  background-color: #e74c3c; /* Red background */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.cancel-button:hover {
+  background-color: #c0392b; /* Darker red */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .appointments-listt {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .appointment-carddd {
+    padding: 15px;
+  }
+
+  .doctor-nameeee {
+    font-size: 20px; /* Adjust text size for smaller screens */
+  }
+
+  .doctor-specialityyy {
+    font-size: 16px;
+  }
+
+  .pay-button,
+  .cancel-button {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .appointments-titleee {
+    font-size: 24px; /* Smaller title */
+  }
+
+  .doctor-imageee {
+    width: 100px; /* Reduce image size */
+    height: 100px;
+  }
+
+  .appointment-datetimee {
+    font-size: 14px;
+  }
+
+  .pay-button,
+  .cancel-button {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+}

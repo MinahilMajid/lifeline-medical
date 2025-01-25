@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Main Container */
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.main-container p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: medium;
+  color: #333;
+  margin-bottom: 20px;
+}
+.availabilityy aaa{
+  color: #13e343;
+}
+
+/* Speciality Navigation */
+.speciality-navigate {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.speciality-navigate p {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.speciality-navigate p:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.speciality-navigate p.active {
+  background-color: #ff6f61;
+  color: white;
+}
+
+/* Doctors Grid */
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.doctor-cardd {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+ 
+}
+
+.doctor-cardd:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-imagee {
+  width: 100%;
+  height: 200px;
+  object-fit:contain;
+}
+
+.doctor-infoo {
+  padding: 15px;
+  text-align: center;
+}
+
+.availabilityy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #13e343;
+  border-radius: 50%;
+}
+
+.doctor-namee {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.doctor-specialityy {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .speciality-navigate {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .speciality-navigate p {
+    margin-bottom: 10px;
+  }
+}
+
+

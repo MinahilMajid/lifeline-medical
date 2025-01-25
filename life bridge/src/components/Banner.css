@@ -1,0 +1,98 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5a7dff;
+  color: white;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px; /* Limit the width for large screens */
+  border-radius: 10px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 20px; /* Add spacing between elements when wrapped */
+}
+
+.text-content {
+  flex: 1;
+  text-align: left;
+  min-width: 280px; /* Prevent text from shrinking too much */
+}
+
+.text-content h1 {
+  font-size: 36px;
+  margin: 0;
+  line-height: 1.5;
+  color: aliceblue;
+}
+
+.text-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #050608;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.text-content button:hover {
+  background-color: #d4d4d4;
+}
+
+.image-content {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  text-align: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-height: 300px; /* Adjust the image height */
+   margin-bottom:-25px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column; /* Stack text and image vertically */
+    text-align: center; /* Center align text */
+    padding: 20px;
+  }
+
+  .text-content h1 {
+    font-size: 28px; /* Reduce heading size */
+  }
+
+  .text-content button {
+    padding: 10px 15px;
+    font-size: 14px; /* Smaller button text */
+  }
+
+  .image-content img {
+    max-height: 250px; /* Smaller image for tablets */
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .banner {
+    padding: 10px;
+  }
+
+  .text-content h1 {
+    font-size: 24px; /* Further reduce heading size */
+  }
+
+  .text-content button {
+    padding: 8px 12px;
+    font-size: 12px; /* Smaller button text */
+  }
+
+  .image-content img {
+    max-height: 200px; /* Adjust image height for mobile */
+  }
+}

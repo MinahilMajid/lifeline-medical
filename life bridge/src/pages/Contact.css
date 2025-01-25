@@ -1,0 +1,81 @@
+/* General container styling */
+.contact-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: #333;
+  /* background-color: #f9f9f9; */
+  text-align: center;
+}
+
+/* Header styles */
+.contact-header {
+  margin-bottom: 20px;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+/* Body styling */
+.contact-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Image styling */
+.contact-image {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Info section styling */
+.contact-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 90%;
+  max-width: 500px;
+}
+
+.contact-subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-address,
+.contact-details,
+.contact-careers,
+.contact-careers-text {
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
